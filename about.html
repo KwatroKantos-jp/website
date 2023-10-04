@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>KWATRO KANTOS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>About Us</h1>
+
+        
+</section>
+    
+<!----- about us content ----->
+<section class="location">
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3218.0471864447904!2d139.5340951!3d36.2383477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601f301b96ba97a5%3A0xb3d17581404b750c!2s2-ch%C5%8Dme-11-29%20Midorich%C5%8D%2C%20Tatebayashi%2C%20Gunma%20374-0025!5e0!3m2!1sen!2sjp!4v1696418850240!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+</section>
+    
+<section class="contact-us">
+    
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>Midorichō 2-11-29, Tatebayashi City, Gunma</h5>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>0276-57-8069</h5>
+                    <p>Thursday to Monday, 5PM to 2AM</p> 
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <span>
+                    <h5>kwatrokantos.jp@gmail.com</h5>
+                    <p>Email us </p> 
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            
+            <form action="form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter email Address" required>
+                <input type="text" name="subject" placeholder="Enter your subject" required>
+                <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                <button type="submit" class="hero-btn red-btn">Send Message</button>
+            </form>
+            
+        </div>
+    </div>
+</section>
+
+    
+
+
+
+
+<!----- Footer ----->
+    
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Don't hesitate to contact us if you have a question.<br>Remember that you are always welcome here at <b>KWATRO KANTOS</b>.<br>We will be waiting for you.</p>
+    <div class="icons">
+        <i class="fa fa-brands fa-square-facebook"></i>
+        <i class="fa fa-brands fa-instagram"></i>
+        <i class="fa fa-envelope"></i>
+    </div>
+    <p>Made with <i class="fa fa-regular fa-heart"></i> by <b>KWATRO KANTOS FAMILY</b></p>
+</section>
+    
+    
+<!-----JavaScript for Toggle Menu----->
+    
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+</script>
+    
+</body>          
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
